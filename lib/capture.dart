@@ -42,7 +42,6 @@ class CapturePageState extends State<CapturePage> {
       onVerticalDragUpdate: (event) {
         Offset offsetDelta = event.delta;
         double verticalOffsetDelta = offsetDelta.dy;
-        print('verticalOffsetDelta: ${verticalOffsetDelta}');
         bool isSoundUp = verticalOffsetDelta > 0 && volume < 100;
         bool isSoundDown = verticalOffsetDelta < 0 && volume > 0;
         setState(() {
